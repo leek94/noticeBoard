@@ -15,6 +15,9 @@ public class Article {
     @Column
     private String title;
 
+    public Article() {
+    }
+
     @Column
     private String content;
 
