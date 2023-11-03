@@ -13,7 +13,7 @@ public class Member {
     private Long id;
 
     @Column
-    private String email
+    private String email;
 
     @Column
     private String password;
