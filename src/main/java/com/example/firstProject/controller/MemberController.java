@@ -1,14 +1,20 @@
 package com.example.firstProject.controller;
 
+import com.example.firstProject.dto.MemberForm;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 public class MemberController {
 
+    @Autowired
+    private MemberRepository memberRepository;
+
     @GetMapping("/member/new")
     public String newMemberForm(){
         return "member/new";
     }
+
 
     @PostMapping("/member/create")
     public String createMember(MemberForm form) {
