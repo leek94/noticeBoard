@@ -1,5 +1,7 @@
 package com.example.firstProject.dto;
 
+import com.example.firstProject.entity.Member;
+
 public class MemberForm {
     private String email;
     private String password;
