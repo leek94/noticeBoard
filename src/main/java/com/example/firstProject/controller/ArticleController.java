@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class ArticlController {
+public class ArticleController {
 
     @GetMapping("/articles/new")
     public String newArticleForm(){
@@ -14,7 +14,7 @@ public class ArticlController {
     }
 
     @PostMapping("/articles/create")
-    public String createArticle(ArticleForm form) {
+    public String createArticle(ArticleForm form) { //form 정보 매개변수로 받아옴
         System.out.println(form.toString());
         //1. DTO를 엔티티로 변환
 //        Article atricle = form.toEntity();
