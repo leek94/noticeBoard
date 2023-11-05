@@ -18,10 +18,10 @@ public class MemberController {
     @Autowired
     private MemberRepository memberRepository;
 
-    @GetMapping("/members")
-    public String newMemberForm(){
-        return "member/new";
-    }
+//    @GetMapping("/members")
+//    public String newMemberForm(){
+//        return "member/new";
+//    }
 
 
     @PostMapping("/join")

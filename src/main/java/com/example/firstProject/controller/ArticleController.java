@@ -36,7 +36,7 @@ public class ArticleController {
         Article saved = articleRepository.save(article);
         log.info(saved.toString());
 //        System.out.println(saved.toString());
-        return "";
+        return "redirect:/articles/" + saved.getId(); //id 값을 받아서 리다이렉션
     }
 
     @GetMapping("/articles/{id}")
@@ -63,5 +63,9 @@ public class ArticleController {
         return "articles/index";
     }
 
+    @GetMapping("/articles/{id}/edit")
+    public String edit() {
+        return "articles/edit";
+    }
 
 }
