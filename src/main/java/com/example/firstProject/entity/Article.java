@@ -29,4 +29,9 @@ public class Article {
         if (article.content != null)
             this.content = article.content;
     }
+    // Constructor with title and content
+//    public Article(String title, String content) {
+//        this.title = title;
+//        this.content = content;
+//    }
 }
