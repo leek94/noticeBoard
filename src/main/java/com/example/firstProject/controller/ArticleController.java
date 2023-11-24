@@ -45,8 +45,8 @@ public class ArticleController {
         log.info("id = " + id);
         // 1.id를 조회해 데이터 가져오기
         Article articleEntity = articleRepository.findById(id).orElse(null); // Optional이나 orElse로 값 없을 때 처리를 해야 함
-        model.addAttribute("article", articleEntity);
         // 2. 모델에 데이터 등록하기
+        model.addAttribute("article", articleEntity);
         // 3. 뷰 페이지 반환하기
 
         return "articles/show";
